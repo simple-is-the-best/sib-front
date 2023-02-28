@@ -39,8 +39,7 @@ const Layout = ({children}: IProps) => {
             <Box sx={{display: 'flex'}}>
                 <CssBaseline/>
 
-
-                <AppBar position="absolute" open={open}>
+                <AppBar position="absolute" open={open} style={{background: "#EF0052"}}>
                     <Toolbar sx={{pr: '24px'}}>
                         <IconButton
                             edge="start"
@@ -57,17 +56,17 @@ const Layout = ({children}: IProps) => {
                             color="inherit"
                             noWrap
                             sx={{flexGrow: 1}}
+                            fontWeight={"bold"}
                         >
-                            Hello World
+                             N O P E C H O
                         </Typography>
                         <IconButton color="inherit">
-                            <Badge badgeContent={4} color="secondary">
+                            <Badge badgeContent={1000} color="secondary">
                                 <NotificationsIcon/>
                             </Badge>
                         </IconButton>
                     </Toolbar>
                 </AppBar>
-
 
                 <Drawer variant="permanent" open={open}>
                     <Toolbar
@@ -82,14 +81,11 @@ const Layout = ({children}: IProps) => {
                             <ChevronLeftIcon/>
                         </IconButton>
                     </Toolbar>
-                    <Divider/>
                     <List component="nav">
                         <MainList/>
                         <Divider sx={{my: 1}}/>
-                        <MainList/>
                     </List>
                 </Drawer>
-
 
                 <Box component="main"
                      sx={{

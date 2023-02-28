@@ -1,7 +1,7 @@
 import '../../styles/globals.css'
 import React  from "react";
 import {Inter} from "next/font/google";
-import Layout from "./(components)/(shared)/(layout)/Layout";
+import Layout from "../components/shared/layout/Layout";
 
 export const metadata = {
     title: 'Create Next App',
