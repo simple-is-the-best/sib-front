@@ -5,7 +5,7 @@ export default function Chat() {
         <>
             <div>
                 채팅 페이지
-                <ChannelContainer channelId={1}/>
+                <ChannelContainer channelId={"1080166591111315456"}/>
             </div>
         </>
     )

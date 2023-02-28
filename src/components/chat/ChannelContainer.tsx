@@ -7,7 +7,8 @@ import {Button, ButtonGroup} from "@mui/material";
 import {ChannelPath} from "../../app/chat/chat.constant";
 
 interface IProps {
-    channelId: number;
+    //JavaScript not supported "Long" type
+    channelId: string;
 }
 
 export const ChannelContainer = ({channelId}: IProps) => {
@@ -34,8 +35,8 @@ export const ChannelContainer = ({channelId}: IProps) => {
         }
     }
 
-    const handlePublish = (message: object) => {
-        message = {
+    const handlePublish = () => {
+        const message = {
             type: "TEXT",
             senderId: 10001,
             sendAt: "2023-02-12T12:11:50.248",
