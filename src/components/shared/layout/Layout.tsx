@@ -96,10 +96,11 @@ const Layout = ({children}: IProps) => {
                          flexGrow: 1,
                          height: '100vh',
                          overflow: 'auto',
+                         color: 'black'
                      }}
                 >
                     <Toolbar/>
-                    <Container maxWidth="lg" sx={{mt: 4, mb: 4}}>
+                    <Container maxWidth="lg" sx={{mt: 5, mb: 4, mr: 2, ml: 2}}>
                         <Grid container spacing={3}>
                             {children}
                         </Grid>

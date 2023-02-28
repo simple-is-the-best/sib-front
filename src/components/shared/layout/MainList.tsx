@@ -1,22 +1,41 @@
 'use client'
-import {ListItemText, ListItemButton, ListItemIcon} from "@mui/material"
+import {ListItemButton, ListItemIcon} from "@mui/material"
 import ForumRoundedIcon from '@mui/icons-material/ForumRounded';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import PeopleIcon from '@mui/icons-material/People';
-import BarChartIcon from '@mui/icons-material/BarChart';
-import LayersIcon from '@mui/icons-material/Layers';
-import {fontWeight} from "@mui/system";
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import {Noto_Sans_KR} from "next/font/google";
+import styled from "styled-components";
+
+const sansKR = Noto_Sans_KR({subsets: ['latin'], weight: '500'});
 
 export const MainList = () => {
+
+    const handleLocationChatting = () => {
+        window.location.href = "/chat"
+    }
+
+    const handleLocationHome = () => {
+        window.location.href = "/"
+    }
+
     return(
         <>
-            <ListItemButton >
+            <ListItemButton className={sansKR.className} onClick={handleLocationHome}>
                 <ListItemIcon>
-                    <ForumRoundedIcon/>
+                    <HomeRoundedIcon fontSize={"large"}/>
                 </ListItemIcon>
-                <ListItemText style={{fontWeight: "bold"}} primary="대화하기"/>
+                <ItemText>홈</ItemText>
+            </ListItemButton>
+
+            <ListItemButton className={sansKR.className} onClick={handleLocationChatting}>
+                <ListItemIcon>
+                    <ForumRoundedIcon fontSize={"large"}/>
+                </ListItemIcon>
+                <ItemText>채팅</ItemText>
             </ListItemButton>
         </>
     )
 }
+
+const ItemText = styled.p`
+    color: #514f4f;
+`;

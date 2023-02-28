@@ -1,7 +1,7 @@
 export default function Chat() {
     return(
         <div>
-            chat
+            채팅 페이지
         </div>
     )
 }
