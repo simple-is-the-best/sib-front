@@ -58,7 +58,7 @@ const Layout = ({children}: IProps) => {
                             sx={{flexGrow: 1}}
                             fontWeight={"bold"}
                         >
-                             N O P E C H O
+                             P L A Y - G R O U N D
                         </Typography>
                         <IconButton color="inherit">
                             <Badge badgeContent={1000} color="secondary">
