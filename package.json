@@ -21,6 +21,7 @@
     "@types/react-dom": "18.0.11",
     "@types/styled-components": "^5.1.26",
     "dayjs": "^1.11.7",
+    "dotenv": "^16.0.3",
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
     "framer-motion": "^10.0.0",
